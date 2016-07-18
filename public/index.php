@@ -4,7 +4,7 @@ $cfg = json_decode($cfg_str, true);
 
 # The Internet gets to set these values. Be conservative.
 function s($str) { return preg_replace("([^A-Za-z0-9 \#]+)", "", $str); }
-function scfg($name) { global cfg; return s($cfg[$name]); }
+function scfg($name) { global $cfg; return s($cfg[$name]); }
 
 $s_user_name = htmlspecialchars($_POST['name']);
 ?>
