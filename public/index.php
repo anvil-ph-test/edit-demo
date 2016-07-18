@@ -40,7 +40,7 @@ $s_user_name = htmlspecialchars($_POST['name']);
 
 <div class="name">
 <? if ($s_user_name) { ?>
-Hello, <?= ($cfg['uppercase']?strtoupper($s_user_name):$_user_name) ?>!
+Hello, <?= ($cfg['uppercase']?strtoupper($s_user_name):$s_user_name) ?>!
 <? } ?>
 
 </body>
