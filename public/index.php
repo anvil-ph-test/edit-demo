@@ -39,7 +39,7 @@ $s_user_name = htmlspecialchars($_POST['name']);
 <form action="index.php" method="POST"><input type="text" name="name" value="<?=$s_user_name?>"><input type="submit" value="Say Hello"></form>
 
 <div class="name">
-<? if ($user_name) { ?>
+<? if ($s_user_name) { ?>
 Hello, <?= ($cfg['uppercase']?strtoupper($s_user_name):$_user_name) ?>!
 <? } ?>
 
