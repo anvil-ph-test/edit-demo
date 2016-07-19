@@ -14,7 +14,7 @@ $s_user_name = htmlspecialchars($_POST['name']);
 <style>
 	body {
 		font-size: 14px;
-		font-family: <?=scfg('font')?>;
+		font-family: '<?=scfg('font')?>';
 		background-color: <?=scfg('background')?>;
 	}
 
