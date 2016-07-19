@@ -25,6 +25,8 @@ $s_user_name = htmlspecialchars($_POST['name']);
 	.refresh-link a {
 		font-size: 12px;
 		color: #000;
+	}
+	.refresh-link {
 		padding-bottom: 14px;
 	}
 </style>
